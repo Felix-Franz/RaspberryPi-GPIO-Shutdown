@@ -62,7 +62,7 @@ GPIO.setmode(GPIO.BCM)
 ## Run on startup
 To run it automatically after the startup of RaspberryPi, you just have to add following line above _exit 0_ to _/etc/rc.local_.<br>
 You have to replace _path\_to\_file_ with your own path to your downloaded file.
-<pre>python /path_to_file/GPIO_Shutdown.py</pre>
+<pre>python /path_to_file/GPIO_Shutdown.py &</pre>
 
 
 ## Uninstallation
