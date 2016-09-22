@@ -1,4 +1,4 @@
-# Written by Felix Franz (20.9.2016)
+# Written by Felix Franz (20.9.2016) 
 # Uses Pin 3 and GND Pin (if P3 connected to GND --> Shutdown)
 # To change which pin is used: Just change the number behind GPIO_Pin
 # Run with "python /PATH/TO/FILE/GPIO_Shutdown.py &" (put this command with path to file in /etc/rc.local to start this automatically after booting)
