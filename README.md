@@ -39,6 +39,10 @@ Just navigate with your terminal to your downloaded file and run
 <pre>python GPIO_Shutdown.py</pre>
  Replace the _GPIO_Shutdown.py_ with your filename.
  
+ You may need to run it as root:
+ <pre>sudo python GPIO_Shutdown.py</pre>
+ <br>
+ 
 Connect pin3 to the GND pin next to it (for example with a paperclip). Then the RaspberryPi starts to shutdown.<br>
 If you are not sure about what pin is the right one, just look at the [RaspberryPi Website](https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/README.md).<br>
 Be sure to use the right pin, using the wrong one may cause a damnage of your RaspberryPi!
