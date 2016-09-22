@@ -8,11 +8,27 @@ Save it anywhere on your pi.
 
 
 ## Requirements
-You only need python.<br>
-If it is not installed you only need to do this:
+You only need python and RPi.GPIO.<br>
+If you are running Raspbian everything should be installed!
+If python is not installed you only need to do this:
 <pre>
 sudo apt-get update
 sudo apt-get install python
+</pre>
+<br>
+To install [RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO) run following commands:
+<pre>
+sudo apt-get update
+sudo apt-get install rpi.gpio
+</pre>
+If that doesn't work use this:
+<pre>
+wget https://pypi.python.org/packages/c1/a8/de92cf6d04376f541ce250de420f4fe7cbb2b32a7128929a600bc89aede5/RPi.GPIO-0.6.2.tar.gz #If that 0.6.2 is not the latest version copy the download link from here: https://pypi.python.org/pypi/RPi.GPIO
+tar -xvf RPi.GPIO-0.5.11.tar.gz
+cd RPi.GPIO-0.6.1
+sudo python setup.py install
+cd ..
+sudo rm -rf RPi.GPIO-0.*
 </pre>
 
 
