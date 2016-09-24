@@ -26,7 +26,7 @@ If 0.6.2 is not the latest version copy the download link from here: [https://py
 <pre>
 sudo apt-get install python-dev gcc
 wget https://pypi.python.org/packages/c1/a8/de92cf6d04376f541ce250de420f4fe7cbb2b32a7128929a600bc89aede5/RPi.GPIO-0.6.2.tar.gz
-tar -xvf RPi.GPIO-0.5.11.tar.gz
+tar -xvf RPi.GPIO-0.6.1.tar.gz
 cd RPi.GPIO-0.6.1
 sudo python setup.py install
 cd ..
