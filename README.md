@@ -11,19 +11,23 @@ Save it anywhere on your pi.
 You only need python and RPi.GPIO.<br>
 If you are running Raspbian everything should be installed!
 If python is not installed you only need to do this:
-<pre>
+```
 sudo apt-get update
 sudo apt-get install python
-</pre>
+```
+
 <br>
 To install [RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO) run following commands:
-<pre>
+
+```
 sudo apt-get update
 sudo apt-get install rpi.gpio
-</pre>
+```
+
 If that doesn't work use this.
 If 0.6.2 is not the latest version copy the download link from here: [https://pypi.python.org/pypi/RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO)
-<pre>
+
+```
 sudo apt-get install python-dev gcc
 wget https://pypi.python.org/packages/c1/a8/de92cf6d04376f541ce250de420f4fe7cbb2b32a7128929a600bc89aede5/RPi.GPIO-0.6.2.tar.gz
 tar -xvf RPi.GPIO-0.6.1.tar.gz
@@ -31,7 +35,7 @@ cd RPi.GPIO-0.6.1
 sudo python setup.py install
 cd ..
 sudo rm -rf RPi.GPIO-0.*
-</pre>
+```
 
 
 ## Run it!
@@ -51,24 +55,24 @@ Be sure to use the right pin, using the wrong one may cause a damnage of your Ra
 ## Additional configuration
 If you want to use another pin than pin3 just change the 3 after _GPIO_Pin_ in the file
 It may look like this:
-<pre>
+```
 ...
 GPIO_Pin = 5
 GPIO.setmode(GPIO.BCM)
 ...
-</pre>
+```
 
 
 ## Run on startup
 To run it automatically after the startup of RaspberryPi, you just have to add following line above _exit 0_ to _/etc/rc.local_.<br>
 You have to replace _path\_to\_file_ with your own path to your downloaded file.
-<pre>python /path_to_file/GPIO_Shutdown.py &</pre>
+```python /path_to_file/GPIO_Shutdown.py &```
 
 
 ## Uninstallation
 Just remove your downloaded file and the line in _/etc/rc.local_<br>
 If you do not need python anymore use:
-<pre>sudo apt-get purge python</pre>
+```sudo apt-get purge python```
 
 
 <br><br>
