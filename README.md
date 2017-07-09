@@ -16,9 +16,7 @@ sudo apt-get update
 sudo apt-get install python
 ```
 
-<br>
 To install [RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO) run following commands:
-
 ```
 sudo apt-get update
 sudo apt-get install rpi.gpio
@@ -36,7 +34,6 @@ sudo python setup.py install
 cd ..
 sudo rm -rf RPi.GPIO-0.*
 ```
-
 
 ## Run it!
 Just navigate with your terminal to your downloaded file and run
@@ -61,7 +58,6 @@ GPIO_Pin = 5
 GPIO.setmode(GPIO.BCM)
 ...
 ```
-
 
 ## Run on startup
 To run it automatically after the startup of RaspberryPi, you just have to add following line above _exit 0_ to _/etc/rc.local_.<br>
